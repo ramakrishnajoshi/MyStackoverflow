@@ -38,7 +38,7 @@ fun SearchScreen(
             searchState.isLoading -> {
                 Box(
                     modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
+                    contentAlignment = Alignment.TopCenter
                 ) {
                     CircularProgressIndicator()
                 }
@@ -160,7 +160,7 @@ private fun ErrorMessage(message: String) {
 private fun ValidationMessage(message: String) {
     Box(
         modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
+        contentAlignment = Alignment.TopCenter
     ) {
         Text(
             text = message,

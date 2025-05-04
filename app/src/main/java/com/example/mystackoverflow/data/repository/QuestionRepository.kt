@@ -26,10 +26,6 @@ class QuestionRepositoryImpl @Inject constructor(
                         response.errorName
                     )
                 }
-                if (response.backoff != null) {
-                    // You might want to handle backoff here
-                    // For example, delay future requests
-                }
                 response.items
             }
     }

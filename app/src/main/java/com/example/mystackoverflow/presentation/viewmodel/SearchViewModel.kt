@@ -29,6 +29,7 @@ class SearchViewModel @Inject constructor(
 
     init {
         setupSearchDebounce()
+        performSearch("")
     }
 
     private fun setupSearchDebounce() {
